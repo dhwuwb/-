@@ -1,0 +1,22 @@
+public class PhraseGenerator {
+
+    public static void main(String[] args){
+        String[] one = {"милый", "добрый", "смелый", "умный", "красочный", "скромный"};
+
+        String[] two = {"интернациональный", "водопроводный", "ориентированный", "очищенный"};
+
+        String[] tree = {"крокодил", "портфель", "анекдот", "дед Мороз", "сом"};
+
+        int oneLenght = one.length;
+        int twoLenght = two.length;
+        int treeLenght = tree.length;
+
+        int rand1 = (int)(Math.random() * oneLenght);
+        int rand2 = (int)(Math.random() * twoLenght);
+        int rand3 = (int)(Math.random() * treeLenght);
+
+        String phrase = one[rand1] + " " + two[rand2] + " " + tree[rand3];
+
+        System.out.print("Ваша рандомная фраза:" + phrase);
+    }
+}
